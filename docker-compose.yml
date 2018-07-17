@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+  rocketchat:
+    image: rocketchat/rocket.chat:latest
+    restart: unless-stopped
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PORT=3000
+      - ROOT_URL=http://localhost:3000
+      - MONGO_URL=mongodb://mongo:27017/rocketchat
+      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
+      - MAIL_URL=smtp://smtp.email
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASS=admin
+    depends_on:
+      - mongo
+    ports:
+      - 3001:3000
+
+  mongo:
+    image: mongo:3.2
+    restart: unless-stopped
+    volumes:
+     - ./data/db:/data/db
+    command: mongod --smallfiles --oplogSize 128 --replSet rs0
+
+  mongo-init-replica:
+    image: mongo:3.2
+    command: 'mongo mongo/rocketchat --eval "rs.initiate({ _id: ''rs0'', members: [ { _id: 0, host: ''localhost:27017'' } ]})"'
+    depends_on:
+      - mongo
+
+  bot_rasa:
+    build: .
+    environment:
+      - TRAINING_EPOCHS=5000
+      - PORT=5005
+      - CONNECTOR=rocketchat
+    ports:
+      - 5005:5005
+    volumes:
+     - .:/app
