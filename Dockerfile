@@ -1,7 +1,7 @@
-from registry.gitlab.com/lappis-unb/services/rouana/rasa_core
+from registry.gitlab.com/arthurtemporim/rasa_rocketchat_bot
 
-add . /app
+add . /opt/bot_rasa
 
-workdir /app
+workdir /opt/bot_rasa
 
 cmd bash -c "make train && make run_conversation"

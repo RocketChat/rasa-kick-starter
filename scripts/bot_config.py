@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import argparse
 import json
@@ -26,12 +26,12 @@ logger.addHandler(ch)
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
-    '--bot-name', '-bn', type=str, default='rouana',
-    help='Bot username (default: rouana)'
+    '--bot-name', '-bn', type=str, default='bot_rasa',
+    help='Bot username (default: bot_rasa)'
 )
 parser.add_argument(
-    '--bot-password', '-bp', type=str, default='rouana',
-    help='Bot password (default: rouana)'
+    '--bot-password', '-bp', type=str, default='bot_rasa',
+    help='Bot password (default: bot_rasa)'
 )
 parser.add_argument(
     '--admin-name', '-an', type=str, default='admin',
@@ -39,7 +39,7 @@ parser.add_argument(
 )
 parser.add_argument(
     '--admin-password', '-ap', type=str, default='admin',
-    help='Admin password (default: rouana)'
+    help='Admin password (default: bot_rasa)'
 )
 parser.add_argument(
     '--rocketchat-url', '-r', type=str, default='http://localhost:3000',

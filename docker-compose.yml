@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo
     ports:
-      - 3001:3000
+      - 3000:3000
 
   mongo:
     image: mongo:3.2
@@ -35,10 +35,10 @@ services:
   bot_rasa:
     build: .
     environment:
-      - TRAINING_EPOCHS=5000
+      - TRAINING_EPOCHS=300
       - PORT=5005
       - CONNECTOR=rocketchat
     ports:
       - 5005:5005
     volumes:
-     - .:/app
+     - .:/opt/bot_rasa
