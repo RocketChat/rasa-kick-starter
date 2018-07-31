@@ -14,7 +14,7 @@ Acess http://localhost:3000/
 Create an `admin` user with the password `admin` and run the command:
 
 ```sh
-python3 scripts/bot_config.py -an admin -ap admin -bn rouana -bp rouana -r http://localhost:3000
+python3 scripts/bot_config.py -an admin -ap admin -bn bot_rasa -bp bot_rasa -r http://localhost:3000
 ```
 
 ### WebHook
