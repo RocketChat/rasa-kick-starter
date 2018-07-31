@@ -15,7 +15,7 @@ actions:
 
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Human Hello! A bot RASA am I."
     buttons:
     - title: "great"
       payload: "great"
@@ -23,14 +23,14 @@ templates:
       payload: "super sad"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Is Danger the dark side of the Force."
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great carry on!"
+  - text: "Correct path, light side is."
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "May the Force be with you."

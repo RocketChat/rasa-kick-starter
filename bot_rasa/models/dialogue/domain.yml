@@ -25,17 +25,17 @@ slots: {}
 templates:
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
+    text: Is Danger the dark side of the Force.
   utter_did_that_help:
   - text: Did that help you?
   utter_goodbye:
-  - text: Bye
+  - text: May the Force be with you.
   utter_greet:
   - buttons:
     - payload: great
       title: great
     - payload: super sad
       title: super sad
-    text: Hey! How are you?
+    text: Human Hello! A bot RASA am I.
   utter_happy:
-  - text: Great carry on!
+  - text: Correct path, light side is.

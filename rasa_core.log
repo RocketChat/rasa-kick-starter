@@ -166,3 +166,453 @@ Alternatively include the following in your code:
 In most other cases you should consider using 'safe_load(stream)'
   data = yaml.load(stream)
 
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+[-] callback error:
+{'isClientSafe': True, 'error': 403, 'reason': 'User not found', 'message': 'User not found [403]', 'errorType': 'Meteor.Error'}
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Encountered an exception while running action 'utter_greet'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 65, in utter_response
+    message.get("buttons"))
+  File "/opt/rasa_core/dispatcher.py", line 107, in utter_button_message
+    **kwargs)
+  File "/opt/rasa_core/channels/channel.py", line 84, in send_text_with_buttons
+    self.send_text_message(recipient_id, message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_happy'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Encountered an exception while running action 'utter_greet'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 65, in utter_response
+    message.get("buttons"))
+  File "/opt/rasa_core/dispatcher.py", line 107, in utter_button_message
+    **kwargs)
+  File "/opt/rasa_core/channels/channel.py", line 84, in send_text_with_buttons
+    self.send_text_message(recipient_id, message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_happy'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_greet'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 65, in utter_response
+    message.get("buttons"))
+  File "/opt/rasa_core/dispatcher.py", line 107, in utter_button_message
+    **kwargs)
+  File "/opt/rasa_core/channels/channel.py", line 84, in send_text_with_buttons
+    self.send_text_message(recipient_id, message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Encountered an exception while running action 'utter_greet'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 65, in utter_response
+    message.get("buttons"))
+  File "/opt/rasa_core/dispatcher.py", line 107, in utter_button_message
+    **kwargs)
+  File "/opt/rasa_core/channels/channel.py", line 84, in send_text_with_buttons
+    self.send_text_message(recipient_id, message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_happy'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_greet'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 65, in utter_response
+    message.get("buttons"))
+  File "/opt/rasa_core/dispatcher.py", line 107, in utter_button_message
+    **kwargs)
+  File "/opt/rasa_core/channels/channel.py", line 84, in send_text_with_buttons
+    self.send_text_message(recipient_id, message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Encountered an exception while running action 'utter_goodbye'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "/opt/rasa_core/processor.py", line 311, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/opt/rasa_core/actions/action.py", line 72, in run
+    tracker)
+  File "/opt/rasa_core/dispatcher.py", line 159, in utter_template
+    self.utter_response(message)
+  File "/opt/rasa_core/dispatcher.py", line 68, in utter_response
+    self.utter_message(message.get("text"))
+  File "/opt/rasa_core/dispatcher.py", line 85, in utter_message
+    message_part)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 426, in send_text_message
+    self.delay_message_sent(message)
+  File "/opt/rasa_core/channels/rocketchat_client.py", line 411, in delay_message_sent
+    [self.channel + '/typing', self.username, True])
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+/usr/local/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+

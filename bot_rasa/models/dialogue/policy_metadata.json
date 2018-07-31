@@ -5,9 +5,6 @@
     },
     "utter_happy": {
       "slots": []
-    },
-    "utter_goodbye": {
-      "slots": []
     }
   },
   "rasa_core": "0.10.0",
