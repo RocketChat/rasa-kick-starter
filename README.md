@@ -41,3 +41,7 @@ Update your `credentials.yml` file.
 ```sh
 docker-compose up bot_rasa
 ```
+
+### Example
+
+![example](https://github.com/arthurTemporim/testrasarocketchat/wiki/images/example.gif)
