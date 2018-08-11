@@ -165,5 +165,11 @@ Session.vim
 # auto-generated tag files
 tags
 
+### Rocket.chat ###
+# Rocket.chat directory
+chat/
 
+### Rasa ###
+bot_rasa/models/dialogue/policy_metadata.json
+rasa_core.log
 # End of https://www.gitignore.io/api/vim,linux,macos,python
