@@ -45,7 +45,7 @@ docker run -it -v $(pwd)/bot_rasa:/app rasa/rasa train
 ### Running
 
 ```sh
-docker-compose up -d bot_rasa
+docker-compose up -d bot
 ```
 
 ### Example
