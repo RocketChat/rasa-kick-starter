@@ -11,7 +11,7 @@ docker-compose up -d rocketchat
 ```
 Acess http://localhost:3000/ 
 
-Create an `admin` user with the password `admin` and run the command:
+Create an `admin` user with the password `admin` and run the following command to create the RASA bot:
 
 ```sh
 python3 scripts/bot_config.py -an admin -ap admin -bn bot_rasa -bp bot_rasa -r http://localhost:3000
@@ -25,8 +25,8 @@ Inside the configuration insert this:
 ```
 Event Trigger: Message Sent
 Enabled: True
-Channel: @bot_rasa
-URLs: http://bot_rasa:5005/webhook
+Channel: #general
+URLs: http://bot:5005/webhooks/rocketchat/webhook
 Post as: bot_rasa
 ```
 
@@ -34,14 +34,22 @@ Post as: bot_rasa
 
 ### Credentials
 
-Update your `credentials.yml` file.
+Update your `credentials.yml` file with Rasa bot's username and password.
+
+### Train the Model
+
+```sh
+docker run -it -v $(pwd)/bot_rasa:/app rasa/rasa train
+```
 
 ### Running
 
 ```sh
-docker-compose up bot_rasa
+docker-compose up -d bot_rasa
 ```
 
 ### Example
 
-![example](https://github.com/arthurTemporim/testrasarocketchat/wiki/images/example.gif)
+![example]
+
+[example]: rasa_bot_example.png

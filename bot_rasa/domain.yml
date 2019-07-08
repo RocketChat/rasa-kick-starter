@@ -1,8 +1,8 @@
 intents:
   - greet
   - goodbye
-  - mood_affirm
-  - mood_deny
+  - affirm
+  - deny
   - mood_great
   - mood_unhappy
 
@@ -15,22 +15,17 @@ actions:
 
 templates:
   utter_greet:
-  - text: "Human Hello! A bot RASA am I."
-    buttons:
-    - title: "great"
-      payload: "great"
-    - title: "super sad"
-      payload: "super sad"
+  - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Is Danger the dark side of the Force."
+  - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Correct path, light side is."
+  - text: "Great carry on!"
 
   utter_goodbye:
-  - text: "May the Force be with you."
+  - text: "Bye"
