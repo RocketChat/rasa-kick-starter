@@ -1,40 +1,42 @@
-version: '2'
+version: '3'
 
 services:
-  mongo:
-    image: mongo
-    volumes:
-    - ./chat/data/db:/data/db
-    - ./chat/data/dump:/dump
-    tty: true
-    command:
-    - mongod
-    - --smallfiles
-    - --oplogSize
-    - '128'
- 
   rocketchat:
-    image: rocketchat/rocket.chat:latest
+    image: rocket.chat:latest
     restart: unless-stopped
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PORT=3000
+      - ROOT_URL=http://localhost:3000
+      - MONGO_URL=mongodb://mongo:27017/rocketchat
+      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
     depends_on:
       - mongo
-    environment:
-      MONGO_URL: 'mongodb://mongo:27017/rocketchat'
-      PORT: '3000'
-      ROOT_URL: 'http://localhost:3000'
-    volumes:
-      - ./chat/uploads:/app/uploads
     ports:
-      - '3000:3000'
+      - 3000:3000
+
+  mongo:
+    image: mongo:3.2
+    restart: unless-stopped
+    volumes:
+      - ./data_db/db:/data/db
+    command: mongod --smallfiles --oplogSize 128 --replSet rs0
+
+  # this container's job is just run the command to initialize the replica set.
+  # it will run the command and remove himself (it will not stay running)
+  mongo-init-replica:
+    image: mongo:3.2
+    command: 'mongo mongo/rocketchat --eval "rs.initiate({ _id: ''rs0'', members: [ { _id: 0, host: ''localhost:27017'' } ]})"'
+    depends_on:
+      - mongo
 
   bot_rasa:
-    build: .
-    environment:
-      - TRAINING_EPOCHS=300
-      - PORT=5005
-      - CONNECTOR=rocketchat
+    image: rasa/rasa
+    volumes:
+      - ./bot_rasa:/app
+    command:
+      - run
     ports:
       - 5005:5005
-    volumes:
-     - .:/opt/bot_rasa
 
