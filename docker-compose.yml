@@ -31,7 +31,7 @@ services:
     depends_on:
       - mongo
 
-  bot:
+  bot_rasa:
     image: rasa/rasa
     volumes:
       - ./bot_rasa:/app
